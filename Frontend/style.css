@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: aquamarine;
+    background-color: #022b35;
+    margin: 0;
+    padding:0cqmax
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.wardrobe-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wardrobe-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.wardrobe-item:last-child {
+    border-bottom: none;
+}
+
+.wardrobe-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .wardrobe-container {
+        width: 90%;
+    }
+}
