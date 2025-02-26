@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe Manager</title>
+</head>
+<body>
+    <h1> Wardrobe Manager</h1>
+
+    <div class="form">
+        <input type="text" id="clothingName" placeholder="Clothing Name">
+        <input type="text" id="clothingCategory" placeholder="Category (e.g., Shirts)">
+        <button onclick="addClothing()">Add Clothing</button>
+    </div>
+
+    <div class="filters">
+        <input type="text" id="searchQuery" placeholder="Search clothing..." onkeyup="filterClothes()">
+        <select id="categoryFilter" onchange="filterClothes()">
+            <option value="">All Categories</option>
+            <option value="">Shirts</option>
+            <option value="">Trousers</option>
+            <option value="">Vests</option>
+            <option value="">T-shirts</option>
+            <option value="">Dresses</option>
+            <option value="">Jackets</option>
+            <option value="">Blouses</option>
+            <option value="">Shorts</option>
+            <option value="">Suits</option>
+        </select>
+    </div>
+
+    <ul id="clothingList"></ul>
+
+</body>
+</html>
